@@ -677,6 +677,12 @@ body.b-page_menu:before {
 	display: flex;
 	margin: 0 -20px;
 }
+.parametrs_multiline{
+	flex-wrap: wrap;
+}
+.parametrs_multiline .parametrs-item{
+	margin-top: 25px;
+}
 .parametrs-item {
 	padding: 0 20px;
 	width: 25%;
