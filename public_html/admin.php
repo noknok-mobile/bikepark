@@ -4,17 +4,8 @@
     <div class="b-container">
         <div class="sect-gray">
             <h1 class="other-page">Управление заказами</h1>
-            <div class="filter-parametr">
+            <form class="filter-parametr">
                 <div class="parametrs parametrs_multiline">
-                    <div class="parametrs-item">
-                        <div class="parametrs-item__title">Фактическая дата возврата</div>
-                        <div class="parametrs-item__select">
-                            <select name="param__delivery" class="b-select chosen-select">
-                                <option>По адресу</option>
-                                <option>Самовывоз</option>
-                            </select>
-                        </div>
-                    </div>
 
                     <div class="parametrs-item parametrs-item_date" id="two-inputs">
                         <div class="parametrs-item__data">
@@ -27,11 +18,23 @@
                         </div>
                     </div>
                     <div class="parametrs-item">
-                        <div class="parametrs-item__title">Статус заказа</div>
+                        <div class="parametrs-item__title">Фактическая дата возврата</div>
                         <div class="parametrs-item__select">
                             <select name="param__delivery" class="b-select chosen-select">
                                 <option>По адресу</option>
                                 <option>Самовывоз</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="parametrs-item">
+                        <div class="parametrs-item__title">Статус заказа</div>
+                        <div class="parametrs-item__select">
+                            <select name="param__delivery" class="b-select chosen-select">
+                                <option value="obrabot">Обрабатывается</option>
+                                <option value="vrabote">В работе</option>
+                                <option value="obrabot">Выполнен</option>
+                                <option value="dostavl">Доставлен</option>
+                                <option value="zavershen">Завершен</option>
                             </select>
                         </div>
                     </div>
@@ -72,7 +75,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="filter-parametr__footer">
+                    <button class="b-button button_fill button_big b-button_action">Найти</button>
+                    <input type="reset" class="b-button button_space button_big b-button_action" value="Сбросить фильтр">
+                </div>
+            </form>
         </div>
     </div>
 </section>
@@ -98,16 +105,23 @@
                                 <div class="lk-item lk-item_200 lk-item_auto lk-item_oplat">
                                     <span class="mob-linetitle">Оплата: </span>
 
-                                    <div class="lk-item_select">
-                                        <select name="param__delivery" class="status chosen-select">
-                                            <option>Оплачен</option>
-                                            <option>Самовывоз</option>
+                                    <div class="lk-item__select js-status-select" data-status="unpaid">
+                                        <select name="param__delivery" class="chosen-select">
+                                            <option value="unpaid">Не оплачен</option>
+                                            <option value="paid">Оплачен</option>
                                         </select>
                                     </div>
 
                                 </div>
                                 <div class="lk-item lk-item_200 lk-item_auto lk-item_status"><span class="mob-linetitle">Статус: </span>
-                                    <div class="status status_obrabot">В обработке</div>
+                                    <div class="lk-item__select js-status-select" data-status="pending">
+                                        <select name="param__delivery" class="chosen-select">
+                                            <option value="processing">В обработке</option>
+                                            <option value="pending">В работе</option>
+                                            <option value="shipped">Доставлен</option>
+                                            <option value="complete">Завершен</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="accord-item__content" style="display: block;">

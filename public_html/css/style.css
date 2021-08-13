@@ -1476,6 +1476,50 @@ h1.h1_lk {
     margin-right: 10px;
 	transition: 0.2s;
 }
+.lk-item__select{
+	text-align: left;
+}
+.lk-item__select .chosen-single{
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 6px;
+	padding: 5px 13px;
+	border:1px solid currentColor;
+	background-color: unset;
+	height: min-content;
+	color: inherit;
+}
+.lk-item__select .chosen-single svg path{
+	stroke: currentColor;
+}
+.lk-item__select .chosen-container .chosen-drop{
+	color: inherit;
+	border-color: currentColor;
+	background-color: #f2f4f7;
+}
+.lk-item__select[data-status="pending"]{
+	color: #FF6B00;
+}
+.lk-item .chosen-container-active.chosen-with-drop .chosen-single{
+	border-radius: 6px 6px 0 0;
+}
+.lk-item .chosen-container-active.chosen-with-drop .chosen-single::after{
+	border-radius: 0;
+}
+.lk-item__select .chosen-container .chosen-results{
+	/* border-radius: 6px; */
+}
+.lk-item__select .chosen-container .chosen-results li{
+	padding: 5px 13px;
+	height: min-content;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: uppercase;
+	background-color: inherit;
+}
 .accord-item_active .lk-item_toggle:before  {
 	transform: rotate(90deg);
 	transition: 0.2s;
