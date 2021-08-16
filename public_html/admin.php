@@ -86,7 +86,7 @@
 
 <section class="b-ftype">
     <div class="b-container">
-        <div class="ftype sect-gray sect-perehoc">
+        <div class="sect-gray sect-perehoc">
             <div class="lk-slide">
                 <div class="lk-slide_wrap">
                     <div class="lk-line lk-line_head lk-line_title lk-line_mobhide">
@@ -99,12 +99,20 @@
                     <div class="lk-table">
                         <div class="accord-item accord-item_active">
                             <div class="accord-item__title">
-                                <div class="lk-item lk-item_400 lk-item_auto lk-item_toggle"><span class="mob-linetitle">Номер заказа: </span> Заказ № 123423</div>
-                                <div class="lk-item lk-item_200 lk-item_auto"><span class="mob-linetitle">Дата: </span> 24.07.2021 </div>
-                                <div class="lk-item lk-item_200 lk-item_auto lk-item_price"><span class="mob-linetitle">Стоимость: </span> 630 AED</div>
+                                <div class="lk-item lk-item_400 lk-item_auto lk-item_toggle">
+                                    <span class="mob-linetitle">Номер заказа: </span> 
+                                    Заказ № 123423
+                                </div>
+                                <div class="lk-item lk-item_200 lk-item_auto">
+                                    <span class="mob-linetitle">Фактическая дата возврата: </span> 
+                                    24.07.2021 
+                                </div>
+                                <div class="lk-item lk-item_200 lk-item_auto lk-item_price">
+                                    <span class="mob-linetitle">Стоимость: </span> 
+                                    630 AED
+                                </div>
                                 <div class="lk-item lk-item_200 lk-item_auto lk-item_oplat">
                                     <span class="mob-linetitle">Оплата: </span>
-
                                     <div class="lk-item__select js-status-select" data-status="unpaid">
                                         <select name="param__delivery" class="chosen-select">
                                             <option value="unpaid">Не оплачен</option>
@@ -113,7 +121,8 @@
                                     </div>
 
                                 </div>
-                                <div class="lk-item lk-item_200 lk-item_auto lk-item_status"><span class="mob-linetitle">Статус: </span>
+                                <div class="lk-item lk-item_200 lk-item_auto lk-item_status">
+                                    <span class="mob-linetitle">Статус: </span>
                                     <div class="lk-item__select js-status-select" data-status="pending">
                                         <select name="param__delivery" class="chosen-select">
                                             <option value="processing">В обработке</option>
