@@ -115,7 +115,10 @@
 	.filter-head__title {
 		font-size: 36px;
 		padding-top: 0;
-	}	
+	}
+	.filter-parametr__footer{
+		grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+	}
 	.parametrs {
 		flex-wrap: wrap;
 	}
@@ -253,6 +256,9 @@
 	.filter-head {
 		align-items: flex-end;
 		margin: 0 0 25px 0;
+	}
+	.filter-parametr__footer{
+		gap: 30px;
 	}
 	.fbike_scrol {
 		margin: 0 -15px;

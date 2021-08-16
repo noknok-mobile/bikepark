@@ -8,6 +8,11 @@ $(document).ready(function () {
     e.stopPropagation();
   });
   
+  $(".js-status-select .chosen-select").chosen().change(function(e) {
+    const status = e.currentTarget.value;
+    e.currentTarget.closest('.js-status-select').dataset.status = status;
+  })
+  
   /********************************Календарь*********************************/
   if ($("div").is("#two-inputs")) {
     $("#two-inputs").dateRangePicker({

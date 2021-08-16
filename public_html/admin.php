@@ -4,7 +4,7 @@
     <div class="b-container">
         <div class="sect-gray">
             <h1 class="other-page">Управление заказами</h1>
-            <form class="filter-parametr">
+            <div class="filter-parametr">
                 <div class="parametrs parametrs_multiline">
 
                     <div class="parametrs-item parametrs-item_date" id="two-inputs">
@@ -77,9 +77,9 @@
                 </div>
                 <div class="filter-parametr__footer">
                     <button class="b-button button_fill button_big b-button_action">Найти</button>
-                    <input type="reset" class="b-button button_space button_big b-button_action" value="Сбросить фильтр">
+                    <button class="b-button button_space button_big b-button_action">Сбросить фильтр</button>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </section>
