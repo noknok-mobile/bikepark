@@ -1,4 +1,4 @@
-<?require($_SERVER['DOCUMENT_ROOT'].'/header.php');?>
+<?php require($_SERVER['DOCUMENT_ROOT'].'/header.php');?>
 
 	<section>
 		<div class="b-container">
@@ -21,6 +21,7 @@
 						<li class="arend-menu__li"><a class="b-link" href="prodlenie1.php">Продление аренды1</a></li>
 						<li class="arend-menu__li"><a class="b-link" href="prodlenie2.php">Продление аренды2</a></li>
 						<li class="arend-menu__li"><a class="b-link" href="popup.php">Всплывающие</a></li>
+						<li class="arend-menu__li"><a class="b-link" href="admin.php">Список заказов - админка</a></li>
 					</ul>
 
 			</div>
@@ -29,4 +30,4 @@
 
 
 
-<?require($_SERVER['DOCUMENT_ROOT'].'/footer.php');?>
+<?php require($_SERVER['DOCUMENT_ROOT'].'/footer.php');?>
