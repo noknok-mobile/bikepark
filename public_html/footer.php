@@ -143,6 +143,13 @@
 			</div>
 		</div>
 
+		<div id="popup-submit" class="popup-window">
+			<a href="#" class="popup-close"/><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M20.6377 1.54594L1.54585 20.6378M1.54585 1.54594L20.6377 20.6378" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg></a>
+			<div class="popup-content">
+				<div class="popup-title popup-title_full">Ваша заявка успешно отправлена.</div>
+				<div class="b-button_zakaz"><a class="b-button button_fill button_big" href="/">На главную страницу</a></div>
+			</div>
+		</div>
 	
 	
 	<div class="popup-mask"></div>

@@ -1,4 +1,4 @@
-<?require($_SERVER['DOCUMENT_ROOT'].'/header.php');?>
+<?php require($_SERVER['DOCUMENT_ROOT'].'/header.php');?>
 
 	<section>
 		<div class="b-container">
@@ -25,16 +25,17 @@
 						<form class="form cont-form">
 							<div class="sub-text">Оставить заявку</div>
 							<div class="subtitle">Остались вопросы? Свяжитесь с нами</div>
-							<div class="form-line"><input type="text" class="input" placeholder="Имя*" /></div>
-							<div class="form-line"><input type="text" class="input masc-phone" placeholder="Номер телефона*" /></div>
+							<div class="form-line"><input type="text" class="input" placeholder="Имя*" required /></div>
+							<div class="form-line"><input type="text" class="input masc-phone" placeholder="Номер телефона*" required /></div>
 							<div class="form-line">
-								<input type="checkbox" class="checkbox" checked id="accept">
+								<input type="checkbox" class="checkbox" checked id="accept" required>
 								<label class="label-check label-check_accept" for="accept">
 									<span class="accept32"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="10" fill="currentcolor"/><path d="M12 16L14.9995 19L19.9995 14" stroke-width="2" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
 									Согласие на обработку персональных данных
 								</label>
 							</div>
 							<div class="form-line"><input type="submit" class="b-button button_fill button_big b-button_submit b-button_form" value="Отправить" /></div>
+							<div class="form-message">Ваша заявка успешно отправлена.</div>
 						</form>
 					</div>
 				</div>
@@ -50,4 +51,4 @@
 
 
 
-<?require($_SERVER['DOCUMENT_ROOT'].'/footer.php');?>
+<?php require($_SERVER['DOCUMENT_ROOT'].'/footer.php');?>

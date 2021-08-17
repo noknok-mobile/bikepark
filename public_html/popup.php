@@ -1,4 +1,4 @@
-<?require($_SERVER['DOCUMENT_ROOT'].'/header.php');?>
+<?php require($_SERVER['DOCUMENT_ROOT'].'/header.php');?>
 
 	<section>
 		<div class="b-container">
@@ -20,10 +20,13 @@
 				<div class="prodlen-link">
 					<a href="#popup-lk" name="modal" class="b-button button_fill button_big b-button_prodlen">Вход</a>
 				</div>
+				<div class="prodlen-link">
+					<a href="#popup-submit" name="modal" class="b-button button_fill button_big b-button_prodlen">Результат формы</a>
+				</div>
 			</div>
 		</div>
 	</section>
 
 
 
-<?require($_SERVER['DOCUMENT_ROOT'].'/footer.php');?>
+<?php require($_SERVER['DOCUMENT_ROOT'].'/footer.php');?>

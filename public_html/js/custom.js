@@ -12,7 +12,14 @@ $(document).ready(function () {
     const status = e.currentTarget.value;
     e.currentTarget.closest('.js-status-select').dataset.status = status;
   })
-  
+  $(".cont-form").on('submit', function(e){
+    e.preventDefault();
+    e.target.classList.add('cont-form_submitted');
+  })
+  $(".cont-form").on('input', function(e){
+    if(e.currentTarget.classList.contains('cont-form_submitted'))
+      e.currentTarget.classList.remove('cont-form_submitted');
+  })
   /********************************Календарь*********************************/
   if ($("div").is("#two-inputs")) {
     $("#two-inputs").dateRangePicker({
