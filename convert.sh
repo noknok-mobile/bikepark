@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#для конвертации .php в .pug
+
 list=$(find . -name '*.php')
 for name in $list
 do
