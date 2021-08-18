@@ -1,0 +1,59 @@
+extends template/template
+block content
+	section
+		.b-container
+			.sect-gray.sect-done
+				h1.other-page.other-page_order Ваш заказ успешно оформлен
+				.order-info
+					.sub-info.order-info__item
+						.sub-info__text Тип аренды
+						.sub-info__value По дням
+					.sub-info.order-info__item.order-info_order1
+						.sub-info__text Дата и время начала
+						.sub-info__value 24.07.211 12:00
+					.sub-info.order-info__item.order-info_order2
+						.sub-info__text Дата и время конца
+						.sub-info__value 25.07.21 12:00
+					.sub-info.order-info__item
+						.sub-info__text Доставка
+						.sub-info__value По адресу
+					.sub-info.order-info__item.order-info_order3
+						.sub-info__text Метод оплаты
+						.sub-info__value Онлайн
+				.order-table.order-table_done
+					.order-items.order-line_title
+						.order-imgname
+							.sub-text.order-item.order-item_img
+							.sub-text.order-item.order-item_namecheck Название велосипедов
+						.sub-text.order-item.order-item_price.text-right Стоимость
+					.order-items
+						.order-imgname
+							.order-item.order-item_img
+								.table-img
+									img(src='img/demo_order.jpg' alt='demo_order')
+							.order-item.order-item_namecheck Городской велосипед бренда фирмы Schwinn модель Traveler 20”
+						.order-item.order-item_price.order-item_stoimost.text-right
+							.price.price_order 180 AED
+					.order-items
+						.order-imgname
+							.order-item.order-item_img
+								.table-img
+									img(src='img/demo_order.jpg' alt='demo_order')
+							.order-item.order-item_namecheck Городской велосипед бренда фирмы Schwinn модель Traveler 20”
+						.order-item.order-item_price.order-item_stoimost.text-right
+							.price.price_order 180 AED
+				.order-total
+					.order-ship
+						.order-ship__line
+							.sub-text Доставка
+							.order-ship__value.text-right
+								.price.price_ship 0 AED
+						.order-ship__line
+							.sub-text Итого
+							.order-ship__value.text-right
+								.price 360 AED
+					.order-total__back
+				.order-link.center
+					a.b-button.button_fill.button_big.b-button_order В личный кабинет
+					a.b-button.button_space.button_big.b-button_order Назад на главную
+

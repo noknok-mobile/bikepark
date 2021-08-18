@@ -1,0 +1,219 @@
+extends template/template
+block content
+	section.b-filter
+		.b-container
+			.sect-gray
+				.filter-head
+					h1.filter-head__title
+						| Аренда велосипедов
+						br
+						| c доставкой
+					.filter-head__gift
+						.gift
+							.gift-item.gift-item_1
+								.gift-item__img
+									img.gift-img(src='img/gift_1.png' alt='gift_1')
+								.gift-item__title Шлем
+								.gift-item__text Бесплатно
+							.gift-item.gift-item_2
+								.gift-item__img
+									img.gift-img(src='img/gift_2.png' alt='gift_2')
+								.gift-item__title Фонарик
+								.gift-item__text Бесплатно
+							.gift-item.gift-item_3
+								.gift-item__img
+									img.gift-img(src='img/gift_3.png' alt='gift_3')
+								.gift-item__title Замок
+								.gift-item__text Бесплатно
+				.filter-parametr
+					.parametrs
+						.parametrs-item
+							.parametrs-item__title Тип аренды
+							.parametrs-item__check
+								.p-check_wrap
+									input.p-check__radio#param__arend1(type='radio' name='param__arend' checked)
+									label.p-check(for='param__arend1')
+										span.p-check__text По дням
+									input.p-check__radio#param__arend2(type='radio' name='param__arend')
+									label.p-check(for='param__arend2')
+										span.p-check__text 2 часа
+									.naveden
+						.parametrs-item.parametrs-item_delivery
+							.parametrs-item__title Доставка
+							.parametrs-item__select
+								select.b-select.chosen-select(name='param__delivery')
+									option По адресу
+									option Самовывоз
+						.parametrs-item.parametrs-item_date#two-inputs
+							.parametrs-item__data
+								.parametrs-item__title Дата и время начала
+								.parametrs-item__range
+									input#date-range200.date-range(type='text' size='20' value='14.07.2021 19:51')
+							.tire —
+							.parametrs-item__data
+								.parametrs-item__title Дата и время конца
+								.parametrs-item__range
+									input#date-range201.date-range(type='text' size='20' value='16.07.2021 19:51')
+	section.b-ftype
+		.b-container
+			.ftype.sect-gray.sect-perehoc
+				.ftype__title Тип велосипеда
+				.fbike_scrol
+					.mob-hand
+					.fbike-wrap
+						.ftype__fbike
+							.fbike
+								.fbike-item
+									.fbike-item__img
+										img.fbike-img(src='img/fbike_1.png' alt='fbike_1')
+									.fbike-item__info
+										.fbike-item__title Алюминий
+										.finfo
+											.price 90 AED
+											.finfo__fbut
+												.fbut
+													.fbut__question
+														a.question.but-qvad
+														.hint Легкие, надежные и легко управляются. Возможны вибрации из-за неровностей дороги.
+													.fbut__plus
+														input.checkbox#plus1(type='checkbox')
+														label.plus.but-qvad(for='plus1')
+								.fbike-item
+									.fbike-item__img
+										img.fbike-img(src='img/fbike_2.png' alt='fbike_2')
+									.fbike-item__info
+										.fbike-item__title Карбон
+										.finfo
+											.price 180 AED
+											.finfo__fbut
+												.fbut
+													.fbut__question
+														a.question.but-qvad
+														.hint Легкие, надежные и легко управляются. Возможны вибрации из-за неровностей дороги.
+													.fbut__plus
+														input.checkbox#plus2(type='checkbox')
+														label.plus.but-qvad(for='plus2')
+								.fbike-item
+									.fbike-item__img
+										img.fbike-img(src='img/fbike_1.png' alt='fbike_1')
+									.fbike-item__info
+										.fbike-item__title Горный/городской
+										.finfo
+											.price 90 AED
+											.finfo__fbut
+												.fbut
+													.fbut__question
+														a.question.but-qvad
+														.hint Легкие, надежные и легко управляются. Возможны вибрации из-за неровностей дороги.
+													.fbut__plus
+														input.checkbox#plus3(type='checkbox')
+														label.plus.but-qvad(for='plus3')
+								.fbike-item
+									.fbike-item__img
+										img.fbike-img(src='img/fbike_1.png' alt='fbike_1')
+									.fbike-item__info
+										.fbike-item__title Городской эконом
+										.finfo
+											.price 45 AED
+											.finfo__fbut
+												.fbut
+													.fbut__question
+														a.question.but-qvad
+														.hint Легкие, надежные и легко управляются. Возможны вибрации из-за неровностей дороги.
+													.fbut__plus
+														input.checkbox#plus4(type='checkbox')
+														label.plus.but-qvad(for='plus4')
+				.b-submit.ftype_submit
+					input.b-button.button_fill.button_big.b-button_submit(type='submit' value='Найти')
+	section.b-result
+		.b-container
+			.result.sect-gray.sect-perehoc
+				.result-parametr
+					.parametrs
+						.parametrs-item
+							.parametrs-item__title Бренд
+							.parametrs-item__select
+								select.b-select.chosen-select(name='param__brand')
+									option Все
+									option Бренд
+						.parametrs-item
+							.parametrs-item__title Размер рамы
+							.parametrs-item__select
+								select.b-select.chosen-select(name='param__rama')
+									option Все
+									option Рама
+				.result-rbike
+					.rbike
+						.rbike-wrap
+							.rbike-item
+								.rbike-item__head
+									.rbike-item__rama 20”
+									.rbike-item__brand SCHWINN
+								.rbike-item__img
+									img.rbike-img(src='img/rbike_1.png' alt='rbike_1')
+								.rbike-item__descr Городской велосипед Schwinn Traveler 20”
+								.price 90 AED/день
+								a.rbike-item__link.b-button.button_space(href='#') выбрать
+						.rbike-wrap.rbike-wrap_disable
+							.rbike-item.rbike-item_busy
+								.rbike-item__head
+									.rbike-item__rama 20”
+									.rbike-item__brand SCHWINN
+								.rbike-item__img
+									img.rbike-img(src='img/rbike_1.png' alt='rbike_1')
+								.rbike-item__descr Городской велосипед Schwinn Traveler 20”
+								.price 90 AED/день
+								.rbike-busy
+									a.rbike-busy__date(href='#popup-freedate' name='modal') Посмотреть свободные даты
+									a.rbike-busy__link.b-button.button_gray(href='#') занят
+						.rbike-wrap
+							.rbike-item
+								.rbike-item__head
+									.rbike-item__rama 20”
+									.rbike-item__brand SCHWINN
+								.rbike-item__img
+									img.rbike-img(src='img/rbike_1.png' alt='rbike_1')
+								.rbike-item__descr Городской велосипед Schwinn Traveler 20”
+								.price 180 AED/день
+								a.rbike-item__link.b-button.button_fill.button_take(href='#')
+									span.take-yes выбрано
+									span.take-no Отменить выбор
+						.rbike-wrap
+							.rbike-item
+								.rbike-item__head
+									.rbike-item__rama 20”
+									.rbike-item__brand SCHWINN
+								.rbike-item__img
+									img.rbike-img(src='img/rbike_1.png' alt='rbike_1')
+								.rbike-item__descr Городской велосипед Schwinn Traveler 20”
+								.price 90 AED/день
+								a.rbike-item__link.b-button.button_fill.button_take(href='#')
+									span.take-yes выбрано
+									span.take-no Отменить выбор
+						.rbike-wrap
+							.rbike-item
+								.rbike-item__head
+									.rbike-item__rama 20”
+									.rbike-item__brand SCHWINN
+								.rbike-item__img
+									img.rbike-img(src='img/rbike_1.png' alt='rbike_1')
+								.rbike-item__descr Городской велосипед Schwinn Traveler 20”
+								.price 90 AED/день
+								a.rbike-item__link.b-button.button_fill.button_take(href='#')
+									span.take-yes выбрано
+									span.take-no Отменить выбор
+						.rbike-wrap
+							.rbike-item
+								.rbike-item__head
+									.rbike-item__rama 20”
+									.rbike-item__brand SCHWINN
+								.rbike-item__img
+									img.rbike-img(src='img/rbike_1.png' alt='rbike_1')
+								.rbike-item__descr Городской велосипед Schwinn Traveler 20”
+								.price 90 AED/день
+								a.rbike-item__link.b-button.button_fill.button_take(href='#')
+									span.take-yes выбрано
+									span.take-no Отменить выбор
+				.b-submit.b-submit_result
+					input.b-button.b-button_submit.button_fill.button_big(type='submit' value='Далее')
+

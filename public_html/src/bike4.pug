@@ -1,0 +1,53 @@
+extends template/template
+block content
+	section
+		.b-container
+			.sect-gray
+				h1.other-page.h1_lk Личный кабинет
+				.lk-burger
+					.burger-arrow
+						b
+							svg(width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+								path(d='M4.99944 8L9.99944 13L14.9994 8' stroke='#297FFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+					.lk-menu.lk-tab3
+						.lk-menu__tab
+							a.lk-menu__link(href='#') Текущие заказы
+						.lk-menu__tab
+							a.lk-menu__link(href='#') Выполненные заказы
+						.lk-menu__tab
+							a.lk-menu__link.lk-menu_active(href='#') Личные данные
+				.block-col
+					.col4-item
+						.sub-info
+							.sub-info__text Имя
+							.form-line
+								input.input(type='text' value='Александр')
+						.sub-info
+							.sub-info__text Номер телефона
+							.form-line
+								input.input(type='text' value='999 999 999')
+					.col4-item.mob-marg
+						.sub-info
+							.sub-info__text E-mail
+							.form-line
+								input.input(type='text' value='example@gmail.com')
+						.sub-info
+							.sub-info__text Адрес доставки
+							.form-line
+								input.input(type='text' value='г. А, ул. АБВГ, д. 1')
+					.col4-item.col4-item_pass
+						h2.pass-mob Изменение пароля
+						.lk-col.mob-marg.lk-changepass
+							.sub-info.sub-info_col6
+								.sub-info__text Пароль
+								.form-line.form-line_pass
+									input.input(type='password' value='123456')
+									a.password-control(href='#')
+							.sub-info.sub-info_col6
+								.sub-info__text Старый пароль
+								.form-line.form-line_pass
+									input.input(type='password' value='123456')
+									a.password-control(href='#')
+				.lk-leftbutton
+					input.b-button.button_fill.button_big.b-button_submit.b-button_save(type='submit' value='Сохранить')
+

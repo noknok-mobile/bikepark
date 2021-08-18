@@ -1,0 +1,181 @@
+extends template/template
+block content
+	section
+		.b-container
+			.sect-gray
+				h1.other-page.other-page_order Заявка на аренду велосипедов
+				.order-info
+					.sub-info.order-info__item
+						.sub-info__text Тип аренды
+						.sub-info__value По дням
+					.sub-info.order-info__item.order-info_order1
+						.sub-info__text Дата и время начала
+						.sub-info__value 24.07.211 12:00
+					.sub-info.order-info__item.order-info_order2
+						.sub-info__text Дата и время конца
+						.sub-info__value 25.07.21 12:00
+					.sub-info.order-info__item
+						.sub-info__text Доставка
+						.sub-info__value По адресу
+				.order-table.order-table_check
+					.order-slide
+						.order-line.order-line_title
+							.sub-text.order-item.order-item_img
+							.sub-text.order-item.order-item_name Название велосипедов
+							.sub-text.order-item.order-item_shlem Шлем
+							.sub-text.order-item.order-item_fonarik Фонарик
+							.sub-text.order-item.order-item_zamok Замок
+							.sub-text.order-item.order-item_price.text-right Стоимость
+						.order-line
+							.order-item.order-item_img
+								.table-img
+									img(src='img/demo_order.jpg' alt='demo_order')
+							.order-item.order-item_name Городской велосипед бренда фирмы Schwinn модель Traveler 20”
+							.order-item.order-item_shlem
+								input.checkbox#shlem1(type='checkbox')
+								label.label-check(for='shlem1')
+									span.accept32
+										svg(width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+											rect(width='40' height='40' rx='10' fill='currentcolor')
+											path(d='M16 20L18.9995 23L23.9995 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							.order-item.order-item_fonarik
+								input.checkbox#fonarik1(type='checkbox')
+								label.label-check(for='fonarik1')
+									span.accept32
+										svg(width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+											rect(width='40' height='40' rx='10' fill='currentcolor')
+											path(d='M16 20L18.9995 23L23.9995 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							.order-item.order-item_zamok
+								input.checkbox#zamok1(type='checkbox' checked)
+								label.label-check(for='zamok1')
+									span.accept32
+										svg(width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+											rect(width='40' height='40' rx='10' fill='currentcolor')
+											path(d='M16 20L18.9995 23L23.9995 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							.order-item.order-item_price.text-right
+								.price.price_order 180 AED
+						.order-line
+							.order-item.order-item_img
+								.table-img
+									img(src='img/demo_order.jpg' alt='demo_order')
+							.order-item.order-item_name Городской велосипед бренда фирмы Schwinn модель Traveler 20”
+							.order-item.order-item_shlem
+								input.checkbox#shlem2(type='checkbox' checked)
+								label.label-check(for='shlem2')
+									span.accept32
+										svg(width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+											rect(width='40' height='40' rx='10' fill='currentcolor')
+											path(d='M16 20L18.9995 23L23.9995 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							.order-item.order-item_fonarik
+								input.checkbox#fonarik2(type='checkbox' checked)
+								label.label-check(for='fonarik2')
+									span.accept32
+										svg(width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+											rect(width='40' height='40' rx='10' fill='currentcolor')
+											path(d='M16 20L18.9995 23L23.9995 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							.order-item.order-item_zamok
+								input.checkbox#zamok2(type='checkbox')
+								label.label-check(for='zamok2')
+									span.accept32
+										svg(width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+											rect(width='40' height='40' rx='10' fill='currentcolor')
+											path(d='M16 20L18.9995 23L23.9995 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							.order-item.order-item_price.text-right
+								.price.price_order 90 AED
+						.order-line
+							.order-item.order-item_img
+								.table-img
+									img(src='img/demo_order.jpg' alt='demo_order')
+							.order-item.order-item_name Городской велосипед бренда фирмы Schwinn модель Traveler 20”
+							.order-item.order-item_shlem
+								input.checkbox#shlem3(type='checkbox')
+								label.label-check(for='shlem3')
+									span.accept32
+										svg(width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+											rect(width='40' height='40' rx='10' fill='currentcolor')
+											path(d='M16 20L18.9995 23L23.9995 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							.order-item.order-item_fonarik
+								input.checkbox#fonarik3(type='checkbox')
+								label.label-check(for='fonarik3')
+									span.accept32
+										svg(width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+											rect(width='40' height='40' rx='10' fill='currentcolor')
+											path(d='M16 20L18.9995 23L23.9995 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							.order-item.order-item_zamok
+								input.checkbox#zamok3(type='checkbox' checked)
+								label.label-check(for='zamok3')
+									span.accept32
+										svg(width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+											rect(width='40' height='40' rx='10' fill='currentcolor')
+											path(d='M16 20L18.9995 23L23.9995 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							.order-item.order-item_price.text-right
+								.price.price_order 90 AED
+				.order-total
+					.order-ship
+						.order-ship__line
+							.sub-text Доставка
+							.order-ship__value.text-right
+								.price.price_ship 0 AED
+						.order-ship__line
+							.sub-text Итого
+							.order-ship__value.text-right
+								.price 360 AED
+					.order-total__back
+						a.button-back(href='#') Назад к выбору велосипедов
+	section
+		.b-container
+			.sect-gray.sect-perehoc
+				form.form.checkout-form
+					.block-col
+						.col6-item
+							.sub-info__text Контактные данные
+							.checkout-osndan
+								.form-line.form-line_osndan
+									input.input(type='text' placeholder='Имя*')
+								.form-line.form-line_osndan
+									input.input.masc-phone(type='text' placeholder='Номер телефона*')
+							.sub-info__text.checkout-form_otstup Информация о доставке
+							.form-line.form-line_otstup
+								input.input(type='text' placeholder='Адрес*')
+							.sub-info__text Форма оплаты
+							.form-line.form-line_radio
+								.form-radio.form-radio_checkout
+									input.radio#radio1(type='radio' checked name='radio')
+									label.label-radio.label-radio_checkout(for='radio1')
+										span.radiokrug
+											svg(width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+												circle(cx='16' cy='16' r='15.5' stroke='#DDE3EB')
+												circle(cx='15.9999' cy='15.9997' r='10.6667' fill='currentcolor')
+										| Онлайн
+
+								.form-radio.form-radio_checkout
+									input.radio#radio2(type='radio' name='radio')
+									label.label-radio.label-radio_checkout(for='radio2')
+										span.radiokrug
+											svg(width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+												circle(cx='16' cy='16' r='15.5' stroke='#DDE3EB')
+												circle(cx='15.9999' cy='15.9997' r='10.6667' fill='currentcolor')
+										| На месте
+
+										.radio-question
+											a.question.but-qvad(href='#' tabindex='0')
+											.hint.hint_radio Легкие, надежные и легко управляются. Возможны вибрации из-за неровностей дороги.
+						.col6-item
+							.sub-info__text Фактическая дата возврата велосипеда
+							.block-data
+								.data-item
+									.form-line
+										input.input(type='text' value='25.07.21')
+								.data-item
+									.form-line
+										input.input(type='text' value='12:00')
+							.form-line
+								input.input(type='text' placeholder='Возврат по адресу')
+							.message.message_checkout
+								.sub-info__text Возвращение велосипеда
+								p На возвращение велосипеда даётся 1 час. Задача организации, в особенности же сложившаяся структура организации позволяет выполнять Важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.
+								.sub-info__text Выбор адреса для возврата
+								p Вы также можете ввести адрес другого места, где мы заберем у вас велосипед.
+					.order-link.order-link_broni.center
+						a.b-button.button_fill.button_big.b-button_check Забронировать
+

@@ -1,0 +1,148 @@
+extends template/template
+block content
+	section
+		.b-container
+			.sect-gray
+				h1.other-page Управление заказами
+				.filter-parametr
+					.parametrs.parametrs_multiline
+						.parametrs-item.parametrs-item_date#two-inputs
+							.parametrs-item__data
+								.parametrs-item__title Дата и время начала
+								.parametrs-item__range
+									input#date-range200.date-range(type='text' size='20' value='14.07.2021 22:22')
+							.parametrs-item__data
+								.parametrs-item__title Дата и время конца
+								.parametrs-item__range
+									input#date-range201.date-range(type='text' size='20' value='16.07.2021 19:51')
+						.parametrs-item
+							.parametrs-item__title Фактическая дата возврата
+							.parametrs-item__select
+								select.b-select.chosen-select(name='param__delivery')
+									option По адресу
+									option Самовывоз
+						.parametrs-item
+							.parametrs-item__title Статус заказа
+							.parametrs-item__select
+								select.b-select.chosen-select(name='param__delivery')
+									option(value='obrabot') Обрабатывается
+									option(value='vrabote') В работе
+									option(value='obrabot') Выполнен
+									option(value='dostavl') Доставлен
+									option(value='zavershen') Завершен
+						.parametrs-item
+							.parametrs-item__title Тип аренды
+							.parametrs-item__select
+								select.b-select.chosen-select(name='param__delivery')
+									option По адресу
+									option Самовывоз
+						.parametrs-item
+							.parametrs-item__title Тип доставки
+							.parametrs-item__select
+								select.b-select.chosen-select(name='param__delivery')
+									option По адресу
+									option Самовывоз
+						.parametrs-item
+							.parametrs-item__title Тип оплаты
+							.parametrs-item__select
+								select.b-select.chosen-select(name='param__delivery')
+									option По адресу
+									option Самовывоз
+						.parametrs-item
+							.parametrs-item__title Статус оплаты
+							.parametrs-item__select
+								select.b-select.chosen-select(name='param__delivery')
+									option По адресу
+									option Самовывоз
+					.filter-parametr__footer
+						button.b-button.button_fill.button_big.b-button_action Найти
+						button.b-button.button_space.button_big.b-button_action Сбросить фильтр
+	section.b-ftype
+		.b-container
+			.sect-gray.sect-perehoc
+				.lk-slide
+					.lk-slide_wrap
+						.lk-line.lk-line_head.lk-line_title.lk-line_mobhide
+							.lk-item.lk-item_400 Номер заказа
+							.lk-item.lk-item_200 Фактическая дата возврата
+							.lk-item.lk-item_200 Стоимость
+							.lk-item.lk-item_200.lk-item_oplat Оплата
+							.lk-item.lk-item_200.lk-item_status Статус
+						.lk-table
+							.accord-item.accord-item_active
+								.accord-item__title
+									.lk-item.lk-item_400.lk-item_auto.lk-item_toggle
+										span.mob-linetitle Номер заказа: 
+										| Заказ № 123423
+
+									.lk-item.lk-item_200.lk-item_auto
+										span.mob-linetitle Фактическая дата возврата: 
+										| 24.07.2021
+
+									.lk-item.lk-item_200.lk-item_auto.lk-item_price
+										span.mob-linetitle Стоимость: 
+										| 630 AED
+
+									.lk-item.lk-item_200.lk-item_auto.lk-item_oplat
+										span.mob-linetitle Оплата: 
+										.lk-item__select.js-status-select(data-status='unpaid')
+											select.chosen-select(name='param__delivery')
+												option(value='unpaid') Не оплачен
+												option(value='paid') Оплачен
+									.lk-item.lk-item_200.lk-item_auto.lk-item_status
+										span.mob-linetitle Статус: 
+										.lk-item__select.js-status-select(data-status='pending')
+											select.chosen-select(name='param__delivery')
+												option(value='processing') В обработке
+												option(value='pending') В работе
+												option(value='shipped') Доставлен
+												option(value='complete') Завершен
+								.accord-item__content(style='display: block;')
+									.accord-item__products
+										.lk-line.lk-line_title
+											.lk-item.lk-item_600 Велосипеды
+											.lk-item.lk-item_200 Цена
+											.lk-item.lk-item_200.lk-item_dney Кол-во дней
+											.lk-item.lk-item_200.lk-item_itog Сумма
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 180 AED
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 45 AED
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 90 AED
+									.accord-item__ship
+										.lk-line.lk-line_itog
+											.lk-item.lk-item_600
+											.lk-item.lk-item_200
+											.lk-item.lk-item_200.lk-item_info Доставка
+											.lk-item.lk-item_200.lk-item_status 0 AED
+										.lk-line.lk-line_itog
+											.lk-item.lk-item_600
+											.lk-item.lk-item_200
+											.lk-item.lk-item_200.lk-item_info Итого
+											.lk-item.lk-item_200.lk-item_status.item-bold 300 AED
+									.accord-item__action
+										.accord-action
+											.lk-line.lk-line_title
+												.lk-item.lk-item_600 Информация об аренде
+											.accord-action_item Тип аренды: 2 часа
+											.accord-action_item Период аренды: 18.03.21 14:00 – 04.04.21 14:00
+											.accord-action_item Тип оплаты: На месте
+											.accord-action_item Тип доставки: Самовывоз
+										.accord-action
+											.lk-line.lk-line_title
+												.lk-item.lk-item_600 Контакты пользователя
+											.accord-action_item Иван К.
+											.accord-action_item 8 999 999 99 99
+											.accord-action_item example@gmail.com
+											.accord-action_item Адрес доставки
+

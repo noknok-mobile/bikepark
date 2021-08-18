@@ -1,0 +1,214 @@
+extends template/template
+block content
+	section
+		.b-container
+			.sect-gray.cabinet
+				h1.other-page.h1_lk Личный кабинет
+				.lk-burger
+					.burger-arrow
+						b
+							svg(width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+								path(d='M4.99944 8L9.99944 13L14.9994 8' stroke='#297FFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+					.lk-menu.lk-tab1
+						.lk-menu__tab
+							a.lk-menu__link.lk-menu_active(href='#') Текущие заказы
+						.lk-menu__tab
+							a.lk-menu__link(href='#') Выполненные заказы
+						.lk-menu__tab
+							a.lk-menu__link(href='#') Личные данные
+				.lk-slide
+					.lk-slide_wrap
+						.lk-line.lk-line_head.lk-line_title.lk-line_mobhide
+							.lk-item.lk-item_400 Номер заказа
+							.lk-item.lk-item_200 Дата
+							.lk-item.lk-item_200 Стоимость
+							.lk-item.lk-item_200.lk-item_oplat Оплата
+							.lk-item.lk-item_200.lk-item_status Статус
+						.lk-table
+							.accord-item.accord-item_active
+								.accord-item__title
+									.lk-item.lk-item_400.lk-item_auto.lk-item_toggle
+										span.mob-linetitle Номер заказа: 
+										| Заказ № 123423
+									.lk-item.lk-item_200.lk-item_auto
+										span.mob-linetitle Дата: 
+										| 24.07.2021
+									.lk-item.lk-item_200.lk-item_auto.lk-item_price
+										span.mob-linetitle Стоимость: 
+										| 630 AED
+									.lk-item.lk-item_200.lk-item_auto.lk-item_oplat
+										span.mob-linetitle Оплата: 
+										| Нет
+									.lk-item.lk-item_200.lk-item_auto.lk-item_status
+										span.mob-linetitle Статус:
+										.status.status_obrabot В обработке
+								.accord-item__content(style='display: block;')
+									.accord-item__products
+										.lk-line.lk-line_title
+											.lk-item.lk-item_600 Велосипеды
+											.lk-item.lk-item_200 Цена
+											.lk-item.lk-item_200.lk-item_dney Кол-во дней
+											.lk-item.lk-item_200.lk-item_itog Сумма
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 180 AED
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 45 AED
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 90 AED
+									.accord-item__ship
+										.lk-line.lk-line_itog
+											.lk-item.lk-item_600
+											.lk-item.lk-item_200
+											.lk-item.lk-item_200.lk-item_info Доставка
+											.lk-item.lk-item_200.lk-item_status 0 AED
+										.lk-line.lk-line_itog
+											.lk-item.lk-item_600
+											.lk-item.lk-item_200
+											.lk-item.lk-item_200.lk-item_info Итого
+											.lk-item.lk-item_200.lk-item_status.item-bold 300 AED
+									.accord-item__action
+										.accord-action
+											.accord-action_item Тип аренды: 2 часа
+											.accord-action_item Период аренды: 18.03.21 14:00 – 04.04.21 14:00
+											.accord-action_item Тип оплаты: На месте
+											.accord-action_item Тип доставки: Самовывоз
+										.accord-action
+											.accord-action_button
+												.button_action
+													a.b-button.button_space.button_big.b-button_action(href='#popup-cancel' name='modal') Отменить заказ
+												.button_action
+													a.b-button.button_fill.button_big.b-button_action(href='#popup-canceled' name='modal') Продлить аренду
+							.accord-item
+								.accord-item__title
+									.lk-item.lk-item_400.lk-item_auto.lk-item_toggle
+										span.mob-linetitle Номер заказа: 
+										| Заказ № 123423
+									.lk-item.lk-item_200.lk-item_auto
+										span.mob-linetitle Дата: 
+										| 24.07.2021
+									.lk-item.lk-item_200.lk-item_auto.lk-item_price
+										span.mob-linetitle Стоимость: 
+										| 630 AED
+									.lk-item.lk-item_200.lk-item_auto.lk-item_oplat
+										span.mob-linetitle Оплата: 
+										| Нет
+									.lk-item.lk-item_200.lk-item_auto.lk-item_status
+										span.mob-linetitle Статус:
+										.status.status_obrabot В обработке
+								.accord-item__content
+									.accord-item__products
+										.lk-line.lk-line_title
+											.lk-item.lk-item_600 Велосипеды
+											.lk-item.lk-item_200 Цена
+											.lk-item.lk-item_200.lk-item_dney Кол-во дней
+											.lk-item.lk-item_200.lk-item_itog Сумма
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 180 AED
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 45 AED
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 90 AED
+									.accord-item__ship
+										.lk-line.lk-line_itog
+											.lk-item.lk-item_600
+											.lk-item.lk-item_200
+											.lk-item.lk-item_200.lk-item_info Доставка
+											.lk-item.lk-item_200.lk-item_status 0 AED
+										.lk-line.lk-line_itog
+											.lk-item.lk-item_600
+											.lk-item.lk-item_200
+											.lk-item.lk-item_200.lk-item_info Итого
+											.lk-item.lk-item_200.lk-item_status.item-bold 300 AED
+									.accord-item__action
+										.accord-action
+											.accord-action_item Тип аренды: 2 часа
+											.accord-action_item Период аренды: 18.03.21 14:00 – 04.04.21 14:00
+											.accord-action_item Тип оплаты: На месте
+											.accord-action_item Тип доставки: Самовывоз
+										.accord-action
+											.accord-action_button
+												.button_action
+													a.b-button.button_space.button_big.b-button_action(href='#popup-cancel' name='modal') Отменить заказ
+												.button_action
+													a.b-button.button_fill.button_big.b-button_action(href='#popup-canceled' name='modal') Продлить аренду
+							.accord-item
+								.accord-item__title
+									.lk-item.lk-item_400.lk-item_auto.lk-item_toggle
+										span.mob-linetitle Номер заказа: 
+										| Заказ № 123423
+									.lk-item.lk-item_200.lk-item_auto
+										span.mob-linetitle Дата: 
+										| 24.07.2021
+									.lk-item.lk-item_200.lk-item_auto.lk-item_price
+										span.mob-linetitle Стоимость: 
+										| 630 AED
+									.lk-item.lk-item_200.lk-item_auto.lk-item_oplat
+										span.mob-linetitle Оплата: 
+										| Нет
+									.lk-item.lk-item_200.lk-item_auto.lk-item_status
+										span.mob-linetitle Статус:
+										.status.status_obrabot В обработке
+								.accord-item__content
+									.accord-item__products
+										.lk-line.lk-line_title
+											.lk-item.lk-item_600 Велосипеды
+											.lk-item.lk-item_200 Цена
+											.lk-item.lk-item_200.lk-item_dney Кол-во дней
+											.lk-item.lk-item_200.lk-item_itog Сумма
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 180 AED
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 45 AED
+										.lk-line.lk-line_text
+											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											.lk-item.lk-item_200.lk-item_cena 90
+											.lk-item.lk-item_200.lk-item_dney 2
+											.lk-item.lk-item_200.lk-item_itog 90 AED
+									.accord-item__ship
+										.lk-line.lk-line_itog
+											.lk-item.lk-item_600
+											.lk-item.lk-item_200
+											.lk-item.lk-item_200.lk-item_info Доставка
+											.lk-item.lk-item_200.lk-item_status 0 AED
+										.lk-line.lk-line_itog
+											.lk-item.lk-item_600
+											.lk-item.lk-item_200
+											.lk-item.lk-item_200.lk-item_info Итого
+											.lk-item.lk-item_200.lk-item_status.item-bold 300 AED
+									.accord-item__action
+										.accord-action
+											.accord-action_item Тип аренды: 2 часа
+											.accord-action_item Период аренды: 18.03.21 14:00 – 04.04.21 14:00
+											.accord-action_item Тип оплаты: На месте
+											.accord-action_item Тип доставки: Самовывоз
+										.accord-action
+											.accord-action_button
+												.button_action
+													a.b-button.button_space.button_big.b-button_action(href='#popup-cancel' name='modal') Отменить заказ
+												.button_action
+													a.b-button.button_fill.button_big.b-button_action(href='#popup-canceled' name='modal') Продлить аренду
+

@@ -1,0 +1,52 @@
+extends template/template
+block content
+	section
+		.b-container
+			.sect-gray
+				h1.other-page Продление аренды
+				.filter-parametr.filter_prodlen
+					.parametrs.parametr_prodlen
+						.parametrs-item_100
+							.parametrs-item.parametrs-item_date
+								.parametrs-item__data
+									.parametrs-item__title Дата и время начала
+									.parametrs-item__range
+										input#date-range200.date-range(readonly disabled size='20' value='14.07.2021 19:51')
+								.tire —
+								.parametrs-item__data
+									.parametrs-item__title Дата и время конца
+									.parametrs-item__range
+										input#inputssingle.date-range(size='20' value='16.07.2021 19:51')
+						.parametrs-item.parametrs-item_100
+							.sub-info__text Форма оплаты
+							.form-line.form-line_radio
+								.form-radio.form-radio_margbot.form-radio_checkout
+									input.radio#radio1(type='radio' checked name='radio')
+									label.label-radio.label-radio_checkout(for='radio1')
+										span.radiokrug
+											svg(width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+												circle(cx='16' cy='16' r='15.5' stroke='#DDE3EB')
+												circle(cx='15.9999' cy='15.9997' r='10.6667' fill='currentcolor')
+										| Онлайн
+
+								.form-radio.form-radio_checkout
+									input.radio#radio2(type='radio' name='radio')
+									label.label-radio.label-radio_checkout(for='radio2')
+										span.radiokrug
+											svg(width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+												circle(cx='16' cy='16' r='15.5' stroke='#DDE3EB')
+												circle(cx='15.9999' cy='15.9997' r='10.6667' fill='currentcolor')
+										| На месте
+
+										.radio-question
+											a.question.but-qvad(href='#' tabindex='0')
+											.hint.hint_radio Легкие, надежные и легко управляются. Возможны вибрации из-за неровностей дороги.
+						.parametrs-item.parametrs-item_50
+							.parametrs-item__title Сумма доплаты
+							.price 0 AED
+						.parametrs-item.parametrs-item_50.
+							
+							
+						.parametrs-item.parametrs-item_50.prodlen-link
+							a.b-button.button_gray.button_big.b-button_prodlen Продлить
+

@@ -1,0 +1,18 @@
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Document</title>
+<form action="#" name="feedback">
+  <input type="text" name="name"/>
+  <input type="text" name="phone"/>
+  <button>отправить</button>
+</form>
+<div class="message"></div>
+<script>
+  document.forms.feedback.addEventListener('submit', function(e){
+              e.preventDefault();
+              e.target.reset();
+              document.querySelector('.message').innerText = 'OK';
+          })
+</script>

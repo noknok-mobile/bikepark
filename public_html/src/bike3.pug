@@ -1,0 +1,44 @@
+extends template/template
+block content
+	section
+		.b-container
+			.sect-gray
+				h1.other-page.h1_lk Личный кабинет
+				.lk-burger
+					.burger-arrow
+						b
+							svg(width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+								path(d='M4.99944 8L9.99944 13L14.9994 8' stroke='#297FFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+					.lk-menu.lk-tab3
+						.lk-menu__tab
+							a.lk-menu__link(href='#') Текущие заказы
+						.lk-menu__tab
+							a.lk-menu__link(href='#') Выполненные заказы
+						.lk-menu__tab
+							a.lk-menu__link.lk-menu_active(href='#') Личные данные
+				.block-col
+					.col4-item
+						.sub-info
+							.sub-info__text Имя
+							.sub-info__value Александр
+						.sub-info
+							.sub-info__text Номер телефона
+							.sub-info__value 999 999 999
+					.col4-item.mob-marg
+						.sub-info
+							.sub-info__text E-mail
+							.sub-info__value example@gmail.com
+						.sub-info
+							.sub-info__text Адрес доставки
+							.sub-info__value г. А, ул. АБВГ, д. 1
+					.col4-item.col4-item_pass.mob-marg
+						.lk-col.lk-changepass
+							.sub-info.sub-info_col6
+								.sub-info__text Пароль
+								.sub-info__value *************
+							.sub-info.sub-info_col6.pass_hide.
+								
+								
+				.lk-leftbutton
+					a.b-button.button_fill.button_big.b-button_edit Редактировать
+
