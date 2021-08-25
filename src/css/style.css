@@ -1735,6 +1735,7 @@ h1.h1_lk {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 -20px 13px;
+	position: relative;
 }
 
 .lk-line_title {
@@ -1746,6 +1747,18 @@ h1.h1_lk {
 
 .lk-line_head {
 	margin: 0;
+}
+.lk-line__remove-button{
+	position: absolute;
+	left: 20px;
+	cursor: pointer;
+	appearance: none;
+	border: none;
+	color: #297FFF;
+	width: 25px;
+	height: 25px;
+	padding: 3px;
+	border-radius: 2px;
 }
 
 .lk-item {
@@ -2428,6 +2441,7 @@ h1.h1_lk {
 
 
 /************Calendar**********************/
+
 
 /* error page block */
 .error-page {

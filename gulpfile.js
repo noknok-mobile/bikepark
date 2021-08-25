@@ -4,14 +4,14 @@ const browserSync = require("browser-sync").create();
 const del = require("del");
 
 const compileHtml = () => {
-  return src(["src/*.pug", "src/ajax/*.pug"])
+  return src(["src/**/*.pug"])
     .pipe(
       pug({
         pretty: true,
-        basedir: "./src/",
+        basedir: "./src/**",
       })
     )
-    .pipe(dest("docs/"));
+    .pipe(dest("docs"));
 };
 
 const styles = () => {
@@ -52,7 +52,10 @@ const liveServer = () => {
 
 exports.build = series(
   clean,
-  parallel(compileHtml, styles, scripts, assets, fonts)
+  parallel(compileHtml, styles, scripts, assets, fonts), 
+  ()=>{
+    return del("docs/template/");
+  }
 );
 exports.server = parallel(liveServer, watcher);
 exports.clean = clean;

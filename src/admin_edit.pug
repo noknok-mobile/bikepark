@@ -1,5 +1,10 @@
+
 extends template/template
 block content
+	mixin removeButton()
+		button.lk-line__remove-button.js-remove(title="Удалить велосипед из заказа") 
+			svg(viewBox="0 0 24 24")
+				path(fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z")
 	section
 		.b-container
 			.sect-gray
@@ -105,31 +110,28 @@ block content
 											.lk-item.lk-item_200.lk-item_dney Кол-во дней
 											.lk-item.lk-item_200.lk-item_itog Сумма
 										.lk-line.lk-line_text
-											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
+											+removeButton
+											.lk-item.lk-item_600 
+												| Городской велосипед Schwinn Traveler 20”
 											.lk-item.lk-item_200.lk-item_cena 90
 											.lk-item.lk-item_200.lk-item_dney 2
 											.lk-item.lk-item_200.lk-item_itog 180 AED
 										.lk-line.lk-line_text
+											+removeButton
 											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
 											.lk-item.lk-item_200.lk-item_cena 90
 											.lk-item.lk-item_200.lk-item_dney 2
 											.lk-item.lk-item_200.lk-item_itog 45 AED
 										.lk-line.lk-line_text
+											+removeButton
 											.lk-item.lk-item_600 Городской велосипед Schwinn Traveler 20”
 											.lk-item.lk-item_200.lk-item_cena 90
 											.lk-item.lk-item_200.lk-item_dney 2
 											.lk-item.lk-item_200.lk-item_itog 90 AED
 									.accord-item__ship
 										.lk-line.lk-line_itog
-											.lk-item.lk-item_600
-											.lk-item.lk-item_200
-											.lk-item.lk-item_200.lk-item_info Доставка
-											.lk-item.lk-item_200.lk-item_status 0 AED
-										.lk-line.lk-line_itog
-											.lk-item.lk-item_600
-											.lk-item.lk-item_200
-											.lk-item.lk-item_200.lk-item_info Итого
-											.lk-item.lk-item_200.lk-item_status.item-bold 300 AED
+											.lk-item.lk-item_600 
+												a.b-button.button_fill.button_big.button_normal Добавить велосипед
 									// edit area
 									.accord-item__action.accord-item__action_admin
 										.accord-action
