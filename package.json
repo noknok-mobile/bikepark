@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp build && gulp server",
+    "build": "gulp build",
+    "server": "gulp server",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noknok-mobile/bikepark.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noknok-mobile/bikepark/issues"
+  },
+  "homepage": "https://github.com/noknok-mobile/bikepark#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0",
+    "pug": "^3.0.2"
+  }
+}
