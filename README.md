@@ -1,12 +1,13 @@
 ## Сборка
-Сборка лежит в папке `docs`
+Сборка лежит в папке `docs`.
 
 Для сборки запустить
 ```bash
+npm i
 npm run build
 ```
 
-Для разработки и запуска локального сервера с live reload
+Для разработки на localhost с live reload
 ```bash
 npm start
 ```
