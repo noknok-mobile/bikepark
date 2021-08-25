@@ -1951,9 +1951,26 @@ h1.h1_lk {
 	align-items: flex-end;
 }
 
+.accord-item__action_admin {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	align-items: start;
+}
+
 .accord-action {
 	width: 50%;
 	padding: 0 20px;
+}
+
+.accord-item__action_admin .accord-action,
+.accord-item__action_admin .lk-item_600,
+.accord-item__action_admin .parametrs-item {
+	width: auto!important;
+}
+
+.accord-item__action_admin .accord-action_button {
+	align-self: end;
 }
 
 .accord-action_item {

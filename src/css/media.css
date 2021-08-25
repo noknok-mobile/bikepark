@@ -975,6 +975,9 @@
 		margin-top: 0;
 		font-size: 24px;
 	}
+	.accord-item__action_admin{
+		grid-template-columns: 1fr;
+	}
 	.button_big {
 		width: 100%;
 		max-width: 300px;
