@@ -131,7 +131,7 @@ block content
 											.lk-item.lk-item_200.lk-item_info Итого
 											.lk-item.lk-item_200.lk-item_status.item-bold 300 AED
 									// edit area
-									.accord-item__action.accord-item__action_admin
+									.accord-item__action.accord-item__action_admin.js-edit-area
 										.accord-action
 											.lk-line.lk-line_title
 												.lk-item.lk-item_600 Информация об аренде
@@ -154,6 +154,5 @@ block content
 											.button_action
 												a.b-button.button_space.button_big.b-button_action(href='#popup-cancel' name='modal') Отменить заказ
 											.button_action
-												a.b-button.button_fill.button_big.b-button_action(href='admin_edit.html') Редактировать
-
-
+												a.b-button.button_fill.button_big.b-button_action.js-order-edit(href='admin_edit.html' data-edit="123423") Редактировать
+	script(src="js/admin.js") 

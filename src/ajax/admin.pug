@@ -1,0 +1,37 @@
+.accord-action
+    .lk-line.lk-line_title
+        .lk-item.lk-item_600 Информация об аренде
+    .accord-action_item Тип аренды: 2 часа
+    .accord-action_item Период аренды: 18.03.21 14:00 – 04.04.21 14:00
+    .accord-action_item.parametrs-item
+        .parametrs-item__title Тип оплаты
+        .parametrs-item__select
+            select.b-select.chosen-select(name='param__delivery')
+                option По адресу
+                option Самовывоз
+    .accord-action_item.parametrs-item
+        .parametrs-item__title Тип доставки
+        .parametrs-item__select
+            select.b-select.chosen-select(name='param__delivery')
+                option По адресу
+                option Самовывоз
+    .accord-action_item.parametrs-item 
+        .parametrs-item__title Адрес доставки
+        .parametrs-item__select
+            input.input(type="text" value=" Адрес доставки")
+.accord-action
+    .lk-line.lk-line_title
+        .lk-item.lk-item_600 Контакты пользователя
+    .accord-action_item Иван К.
+    .accord-action_item 8 999 999 99 99
+    .accord-action_item example@gmail.com
+.accord-action
+    .lk-line.lk-line_title
+        .lk-item.lk-item_600 Комментарий (для администратора)
+    .accord-action_item 
+        input.input(type="text" value="комментарий")
+.accord-action.accord-action_button
+    .button_action
+        a.b-button.button_space.button_big.b-button_action(href='#') Отменить
+    .button_action
+        a.b-button.button_fill.button_big.b-button_action(href='admin.html') Сохранить
