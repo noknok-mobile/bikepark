@@ -102,7 +102,8 @@ block content
 												option(value='pending') В работе
 												option(value='shipped') Доставлен
 												option(value='complete') Завершен
-								.accord-item__content(style='display: block;')
+								.accord-item__content(style='display: block;').js-item-container
+									// product
 									.accord-item__products
 										.lk-line.lk-line_title
 											.lk-item.lk-item_600 Велосипеды
@@ -128,10 +129,14 @@ block content
 											.lk-item.lk-item_200.lk-item_cena 90
 											.lk-item.lk-item_200.lk-item_dney 2
 											.lk-item.lk-item_200.lk-item_itog 90 AED
-									.accord-item__ship
-										.lk-line.lk-line_itog
-											.lk-item.lk-item_600 
-												a.b-button.button_fill.button_big.button_normal Добавить велосипед
+										.accord-item__products-add
+											.admin-search-result
+												include include/filter
+												.js-search-result
+													include ajax/search
+											.accord-action_button
+												a.b-button.button_fill.button_big.button_normal.js-search-button Добавить велосипед
+												a.b-button.button_fill.button_big.button_normal.js-search-close Сохранить
 									// edit area
 									.accord-item__action.accord-item__action_admin
 										.accord-action
@@ -171,5 +176,5 @@ block content
 												a.b-button.button_space.button_big.b-button_action(href='#') Отменить
 											.button_action
 												a.b-button.button_fill.button_big.b-button_action(href='admin.html') Сохранить
-
+	script(src="js/admin.js")
 

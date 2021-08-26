@@ -1914,6 +1914,7 @@ h1.h1_lk {
 	margin-bottom: 15px;
 }
 
+
 .accord-item__title {
 	font-weight: 600;
 	font-size: 18px;
@@ -1969,6 +1970,7 @@ h1.h1_lk {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 30px;
 	align-items: start;
+	margin-top: 30px;
 }
 
 .accord-action {
@@ -2442,6 +2444,28 @@ h1.h1_lk {
 
 /************Calendar**********************/
 
+.accord-item__products-add{
+	padding: 20px;
+}
+.accord-item__products-add .accord-action_button{
+	margin: unset;
+}
+.admin-search-result{
+	display: none;
+	margin-bottom: 20px;
+}
+.js-search-close{
+	display: none;
+}
+.js-item-container-edit .js-search-button{
+	display: none;
+}
+.js-item-container-edit .js-search-close{
+	display: block;
+}
+.js-item-container-edit .admin-search-result{
+	display: block;
+}
 
 /* error page block */
 .error-page {
