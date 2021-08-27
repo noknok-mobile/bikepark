@@ -9,6 +9,30 @@ const editOrderParams = {
   editButton: ".js-order-edit",
 };
 
+function EditMode(item, params = editOrderParams) {
+  this.wrapper = item;
+  this.searchResult = item.querySelector(params.searchResult);
+  this.searchButton = item.querySelector(params.searchButton);
+  this.completeButton = item.querySelector(params.searchCompleteButton);
+  this.removeButtons = item.querySelectorAll(params.removeButton);
+  this.searchBike = async function (e) {
+    const item = this.wrapper;
+    item.classList.add(editOrderParams.wrapperEditable);
+    searchResult = this.searchResult;
+
+    e.preventDefault();
+    let request = await fetch("ajax/search.html");
+    if (request.status == 200) {
+      let html = await request.text();
+      searchResult.innerHTML = html;
+    }
+  };
+
+  this.completeSearch = function () {
+    this.wrapper.classList.remove(editOrderParams.wrapperEditable);
+  };
+}
+
 const editButtons = document.querySelectorAll(editOrderParams.editButton);
 for (let btn of editButtons) {
   btn.addEventListener("click", editOrder);
@@ -25,48 +49,22 @@ async function editOrder(e) {
     item.innerHTML = html;
 
     reinitCustomSelect(item);
-		enableOrderEdit(item); //добавить обработчики для редактирования состава заказа
+    enableOrderEdit(item); //добавить обработчики для редактирования состава заказа
   }
 }
 
 function enableOrderEdit(item) {
-  for (let removeButton of item.querySelectorAll(
-    editOrderParams.removeButton
-  )) {
+  const editMode = new EditMode(item);
+  for (let removeButton of editMode.removeButtons) {
     removeButton.addEventListener("click", deleteItem);
   }
-
-  item
-    .querySelector(editOrderParams.searchCompleteButton)
-    .addEventListener("click", completeSearch);
-
-  item
-    .querySelector(editOrderParams.searchButton)
-    .addEventListener("click", searchBike);
+  editMode.searchButton.addEventListener("click", editMode.searchBike.bind(editMode));
+  editMode.completeButton.addEventListener("click", editMode.completeSearch.bind(editMode));
 }
 
 function deleteItem(e) {
   const item = e.target.closest(editOrderParams.item);
   item.remove();
-}
-
-async function searchBike(e) {
-  const item = e.target.closest(editOrderParams.wrapper);
-  item.classList.add(editOrderParams.wrapperEditable);
-  searchResult = item.querySelector(editOrderParams.searchResult);
-
-  e.preventDefault();
-  let request = await fetch("ajax/search.html");
-  if (request.status == 200) {
-    let html = await request.text();
-    searchResult.innerHTML = html;
-  }
-}
-
-function completeSearch(e) {
-  e.target
-    .closest(editOrderParams.wrapper)
-    .classList.remove(editOrderParams.wrapperEditable);
 }
 
 function reinitCustomSelect(wrapper) {
@@ -75,4 +73,8 @@ function reinitCustomSelect(wrapper) {
     disable_search: true,
     width: "100%",
   });
+}
+
+function exitEditMode(){
+  
 }
